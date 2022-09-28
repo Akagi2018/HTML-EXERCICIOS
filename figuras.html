@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+
+   <meta charset="UTF-8">
+
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>Atividade 9</title>
+
+</head>
+
+<body>
+
+   <h1> Escreva as informações: </h1>
+
+<form method="POST" action="quad.php">
+
+Digite p valor do lado do quadrado: <input type="text" name="ladoquad"/><br/>
+Calcular: <input type="submit"/> 
+
+</form>
+
+</body>
+
+</html>
+
+<?php
+
+$ladoquad = $_POST ['ladoquad'];
+$quad = $ladoquad*$ladoquad;
+
+echo ' A area do quadrado é: ' . $quad;
+?>
+
+Triângulo
+
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+
+   <meta charset="UTF-8">
+
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>atividade9figuras geometricas</title>
+
+</head>
+
+<body>
+
+   <h1> Escreva as informações: </h1>
+
+<form method="POST" action="tri.php">
+
+Digite o valor da base menor: <input type="text" name="basemenor"/><br/>
+
+Digite o valor da altura: <input type ="text" name="altura"/></br>
+
+Calcular: <input type="submit"/> 
+
+
+</form>
+
+</body>
+
+</html>
+
+<?php
+
+$basemenor = $_POST ['basemenor'];
+$altura =$_POST ['altura'];
+$triangulo= ($basemenor*$altura)/2;
+
+echo ' A area do triangulo é:'. $triangulo;
+
+?>
+
+Retangulo
+
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+
+   <meta charset="UTF-8">
+
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>atividade9figuras geometricas</title>
+
+</head>
+
+<body>
+
+   <h1> Escreva as informações: </h1>
+
+<form method="POST" action="rect.php">
+
+Digite o valor do base: <input type="text" name="base"/><br/>
+
+Digite o valor da altura: <input trype="text" name="altura"/>
+
+Calcular: <input type="submit"/> 
+
+</form>
+
+</body>
+
+</html>
+
+<?php
+
+$base = $_POST ['base'];
+$altura =$_POST ['altura'];
+$retangulo= $base*$altura;
+
+echo ' A area do retangulo é:'. $retangulo;
+
+?>
+
+Triangulo equilatero
+
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+
+   <meta charset="UTF-8">
+
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>atividade9figuras geometricas</title>
+
+</head>
+
+<body>
+
+   <h1> Escreva as informações: </h1>
+
+<form method="POST" action="trieq.php">
+
+Digite o valor do lado: <input type="text" name="ladotri"/><br/>
+
+Calcular: <input type="submit"/> 
+
+</form>
+
+</body>
+
+</html>
+
+<?php
+
+$ladotri=$_POST['ladotri'];
+$arerect = $ladotri*$ladotri* sqrt(3)/4;
+
+echo 'A area do triangulo retangulo é:'. $arerect;
+
+?>
+
+Trapézio
+
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+
+   <meta charset="UTF-8">
+
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+
+   <title>atividade9figuras geometricas</title>
+
+</head>
+
+<body>
+
+   <h1> Escreva as informações: </h1>
+
+<form method="POST" action="trapezi.php">
+
+
+
+Digite o valor da base maior: <input type="text" name="basemaior"/><br/>
+
+Digite o valor da base menor: <input type="text" name="basemenor"/><br/>
+
+Digite o valor da altura: <input type="text" name="altura"/><br/>
+
+Calcular: <input type="submit"/> 
+</form>
+
+</body>
+
+</html>
+
+<?php
+
+$basemaior = $_POST ['basemaior'];
+$basemenor=$_POST ['basemenor'];
+$altura =$_POST ['altura'];
+$trapezio= ($basemaior+$basemenor)*$altura/2;
+
+echo ' A area do trapézio é:'. $trapezio;
+
+?>
+Paralelogramo
+
+
+
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+
+   <meta charset="UTF-8">
+
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>atividade9figuras geometricas</title>
+
+</head>
+
+<body>
+
+   <h1> Escreva as informações: </h1>
+
+<form method="POST" action="parale.php">
+
+
+
+Digite o valor do base: <input type="text" name="base"/><br/>
+
+Digite o valor da altura: <input trype="text" name="altura"/>
+
+Calcular: <input type="submit"/> 
+
+</form>
+
+</body>
+
+</html>
+
+<?php
+
+$base = $_POST ['base'];
+$altura =$_POST ['altura'];
+$paralelogramo= $base*$altura;
+
+echo ' A area do paralelogramo é:'. $paralelogramo;
+
+?>
+Circulo
+
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+
+   <meta charset="UTF-8">
+
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+
+   <title>atividade9figuras geometricas</title>
+
+</head>
+
+<body>
+
+   <h1> Escreva as informações: </h1>
+
+<form method="POST" action="circ.php">
+
+Digite o valor do raio do circulo: <input type="text" name="raio"/><br/>
+
+Calcular: <input type="submit"/> 
+
+</form>
+
+</body>
+
+</html>
+
+<?php
+$pi = 3.14;
+$raio = $_POST ['raio'];
+$circulo= $pi*($raio*$raio);
+
+echo 'A area do circulo é:'. $circulo;
+
+?>
+
+
+
+Losângulo
+
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+
+   <meta charset="UTF-8">
+
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>atividade9figuras geometricas</title>
+
+</head>
+
+<body>
+
+   <h1> Escreva as informações: </h1>
+
+<form method="POST" action="losa.php">
+
+Digite o valor da distancia maior: <input type="text" name="distmaior"/><br/>
+
+Digite o valor da distancia menor: <input type ="text" name="distmenor"/></br>
+
+Calcular: <input type="submit"/> 
+
+</form>
+
+</body>
+
+</html>
+
+<?php
+$distmaior = $_POST ['distmaior'];
+$distmenor =$_POST ['distmenor'];
+$losangulo= ($distmaior*$distmenor)/2;
+
+echo ' A area do losangulo é:'. $losangulo;
+
+?>
